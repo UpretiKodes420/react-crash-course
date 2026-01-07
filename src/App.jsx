@@ -1,16 +1,20 @@
-import Mybutton from "./components/button";
-import { useCounter } from "../controller/count";
+import LoginSection from "./components/login-section";
 
 export default function App() {
-  const { count, increase, decrease } = useCounter(0);
+
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center gap-4">
-      <h1 className="text-3xl">{count}</h1>
-      <div className="flex gap-2">
-        <Mybutton label="Increase" onClick={increase} />
-        <Mybutton label="Decrease" onClick={decrease} />
+    <div className=" h-screen bg-gradient-to-r from-blue-500 to-purple-500">
+      <div className="flex justify-center items-center ">
+
+
+        <div className=" flex justify-center w-96 h-[28rem] mt-[5rem] bg-gradient-to-r from-indigo-500 to-purple-500 rounded-br-[3vw] rounded-tl-[3vw] shadow-xl/30 ">
+          <LoginSection />
+        </div>
+
       </div>
+
     </div>
+
   );
 }

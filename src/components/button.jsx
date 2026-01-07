@@ -1,13 +1,10 @@
-
-
-
-export default function Mybutton({ label, onClick }) {
+export default function Mybutton({ label, type }) {
 
 
     return (
-        <main>
-            <button className="bg-sky-500 hover:bg-purple-700 rounded-xl p-2 ml-3" onClick={onClick} >{label}</button>
-        </main>
+
+        <button className="bg-white hover:bg-purple-300 rounded-xl pl-5 pr-5 pt-2 pb-2 mt-10 mr-3 " type={type} >{label}</button>
+
 
     )
 }
